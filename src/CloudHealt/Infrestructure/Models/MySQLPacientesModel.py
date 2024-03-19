@@ -13,4 +13,4 @@ class MySQLPacientesModels(Base):
     gender = Column(String(20), nullable=False)
     birthday = Column(Date, nullable=False)
     historia_uuid = Column(String(36), ForeignKey('historiasclinicas.uuid'))
-    historia = relationship(MySQLHistoriasClinicas, backref=backref('pacientes', uselist=True))
+    historia = relationship(MySQLHistoriasClinicas, backref=backref('pacientes', uselist=True, cascade="all, delete"))

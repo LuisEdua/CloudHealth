@@ -1,5 +1,4 @@
-from sqlalchemy import Column, String, Integer, Date, ForeignKey, Float
-from sqlalchemy.orm import relationship, backref
+from sqlalchemy import Column, String, Float
 from src.Database.MySQL import Base
 
 

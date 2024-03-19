@@ -1,9 +1,9 @@
 import uuid
 
 
-class Diagnostico:
-    def __init__(self, title, decription, paciente):
+class Diagnosticos:
+    def __init__(self, title, description, paciente_uuid):
         self.uuid = uuid.uuid4()
         self.title = title
-        self.decription = decription
-        self.paciente_uuid = paciente.uuid
+        self.description = description
+        self.paciente_uuid = paciente_uuid

@@ -2,7 +2,10 @@ from abc import ABC, abstractmethod
 from src.CloudHealt.Domain.Entity.Pacientes import Pacientes
 
 
-class PacientesPorts(ABC):
+class PacientesPort(ABC):
+    @abstractmethod
+    def __init__(self):
+        pass
 
     @abstractmethod
     def getPacientes(self, level_uuid):
