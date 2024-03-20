@@ -8,7 +8,7 @@ class CamasPort(ABC):
         pass
 
     @abstractmethod
-    def get_camas(self, area_uuid):
+    def get_free_camas(self, area_uuid):
         pass
 
     @abstractmethod

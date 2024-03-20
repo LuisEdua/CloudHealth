@@ -8,11 +8,11 @@ class PacientesPort(ABC):
         pass
 
     @abstractmethod
-    def getPacientes(self, level_uuid):
+    def get_pacientes(self, area_uuid):
         pass
 
     @abstractmethod
-    def getPaciente(self, paciente_uuid):
+    def get_paciente(self, paciente_uuid):
         pass
 
     @abstractmethod
