@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87a2e75-2e6b-4027-9312-3a2ec0c929e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/MiddleWares/functionJWT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLRolesModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLUsersModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Security",
+    "git-widget-placeholder": "Sprint__1",
     "last_opened_file_path": "/home/luis/Downloads/API-DBH",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,7 +99,7 @@
       <updated>1710823662261</updated>
       <workItem from="1710823668201" duration="9427000" />
       <workItem from="1710856935198" duration="76000" />
-      <workItem from="1710961095557" duration="5120000" />
+      <workItem from="1710961095557" duration="6630000" />
     </task>
     <servers />
   </component>
