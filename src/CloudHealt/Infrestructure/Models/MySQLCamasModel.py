@@ -7,9 +7,9 @@ from src.Database.MySQL import Base
 
 
 class MySQLCamasModel(Base):
-    table_name = 'camas'
+    __tablename__ = 'camas'
     uuid = Column(String(36), primary_key=True)
-    name = Column(Integer, nullable=True)
+    number = Column(Integer, nullable=True)
     habitacion_uuid = Column(String(36), ForeignKey('habitaciones.uuid'), nullable=True)
     habitacion = relationship(MySQLHabitacionesModel, backref=backref('camas', uselist=True, cascade="all, delete"))
 
