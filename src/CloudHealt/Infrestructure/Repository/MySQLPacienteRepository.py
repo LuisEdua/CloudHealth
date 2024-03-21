@@ -16,12 +16,16 @@ class MySQLPacienteRepository(PacientesPort):
         pass
 
     def registerPaciente(self, paciente: Pacientes):
-        new = Model(uuid=paciente.uuid, firstname=paciente.firstname, lastname=paciente.lastname,
-                    age=paciente.age, gender=paciente.gender, birthday=paciente.birthday,
-                    quirofano_uuid=paciente.quirofano_uuid, cama_uuid=paciente.uuid)
-        self.db.add(new)
-        self.db.commit()
-        return new.to_json()
+        try:
+            new = Model(uuid=paciente.uuid, firstname=paciente.firstname, lastname=paciente.lastname,
+                        age=paciente.age, gender=paciente.gender, birthday=paciente.birthday,
+                        quirofano_uuid=paciente.quirofano_uuid, cama_uuid=paciente.cama,
+                        historia_uuid=paciente.historia_uuid)
+            self.db.add(new)
+            self.db.commit()
+            return {"status": "Created", "message": "Paciente created", "paciente": new.to_json()}
+        except Exception as e:
+            return {"status": "Failed", "message": str(e)}
 
     def updatePaciente(self, status, cama):
         pass

@@ -15,6 +15,6 @@ class MySQLHistoriasClinicasRepository(HistoriaClinicaPort):
 
     def create_historia(self, historia: HistoriasClinicas):
         new = Model(uuid=historia.uuid, profesion=historia.profesion, weight=historia.weight, high=historia.high)
-        self.db.session.add(new)
-        self.db.session.commit()
+        self.db.add(new)
+        self.db.commit()
         return new.to_json()

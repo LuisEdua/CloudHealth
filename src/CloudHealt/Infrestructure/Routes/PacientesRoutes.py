@@ -8,5 +8,13 @@ createController = CreateController(repo)
 pacientes_routes = Blueprint('pacientes_routes', __name__)
 
 @pacientes_routes.route('/', methods=['POST'])
-def createPaciente(request):
-    return jsonify(createController.run(request))
+def create_paciente():
+    result = createController.run(request)
+    if result['status'] == 'Created':
+        return jsonify(result), 201
+    elif result['status'] == 'Failed':
+        return jsonify(result), 400
+    elif result['status'] == 'Interrupted':
+        return jsonify(result), 500
+    else:
+        return jsonify({'message': 'Resultado desconocido'}), 500

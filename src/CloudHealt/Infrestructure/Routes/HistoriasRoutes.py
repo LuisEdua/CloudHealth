@@ -8,6 +8,6 @@ create_controller = CreateController(repo)
 historias_routes = Blueprint('historias_routes', __name__)
 
 @historias_routes.route('/', methods=['POST'])
-def create_route(request):
-    return jsonify(create_controller.run(request))
+def create_route():
+    return jsonify(create_controller.run(request)), 201
 
