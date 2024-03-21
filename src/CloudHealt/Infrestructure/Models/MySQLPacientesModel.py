@@ -20,3 +20,20 @@ class MySQLPacientesModels(Base):
     cama = relationship(MySQLCamasModel, backref=backref('pacientes', uselist=False))
     historia_uuid = Column(String(36), ForeignKey('historiasclinicas.uuid'), nullable=False)
     historia = relationship(MySQLHistoriasClinicas, backref=backref('pacientes', uselist=True, cascade="all, delete"))
+
+    def to_json(self):
+        return {
+            "uuid": self.uuid,
+            "firstname": self.firstname,
+            "lastname": self.lastname,
+            "age": self.age,
+            "gender": self.gender,
+            "birthday": self.birthday,
+            "cama": self.cama.number,
+            "habitacion": self.cama.habitacion.number,
+            "pabellon": self.cama.habitacion.area.name,
+            "quirofano": self.quirofano.number,
+            "piso pabellon": self.cama.habitacion.area.floor.level,
+            "piso quirofano": self.quirofano.floor.level,
+            "historia": self.historia.to_json()
+        }
