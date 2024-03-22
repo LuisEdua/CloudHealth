@@ -2,7 +2,7 @@ import uuid
 
 
 class Pacientes:
-    def __init__(self, firstname, lastname, age, gender, birthday, cama_uuid, quirofano_uuid, historia_clinica, status_uuid):
+    def __init__(self, firstname, lastname, age, gender, birthday, cama_uuid, quirofano_uuid, historia_clinica, status):
         self.uuid = uuid.uuid4()
         self.firstname = firstname
         self.lastname = lastname
@@ -12,4 +12,4 @@ class Pacientes:
         self.cama = cama_uuid
         self.quirofano_uuid = quirofano_uuid
         self.historia_uuid = historia_clinica.uuid
-        self.status = status_uuid
+        self.status = status

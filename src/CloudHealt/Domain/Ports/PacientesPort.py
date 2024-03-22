@@ -20,5 +20,5 @@ class PacientesPort(ABC):
         pass
 
     @abstractmethod
-    def updatePaciente(self, status, cama):
+    def updatePaciente(self, paciente_uuid, status, cama, quirofano):
         pass
