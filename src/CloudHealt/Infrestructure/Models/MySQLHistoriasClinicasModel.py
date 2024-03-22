@@ -8,3 +8,11 @@ class MySQLHistoriasClinicas(Base):
     profesion = Column(String(255), nullable=False)
     weight = Column(Float, nullable=False)
     high = Column(Float, nullable=False)
+
+    def to_json(self):
+        return {
+            'uuid': self.uuid,
+            'profesion': self.profesion,
+            'weight': self.weight,
+            'high': self.high
+        }

@@ -4,7 +4,7 @@ from src.CloudHealt.Infrestructure.Models.MySQLPisosModel import MySQLPisosModel
 from src.Database.MySQL import Base
 
 
-class MySQLQuirofanos(Base):
+class MySQLQuirofanosModel(Base):
     __tablename__ = 'quirofanos'
     uuid = Column(String(36), primary_key=True)
     number = Column(Integer, nullable=False)
