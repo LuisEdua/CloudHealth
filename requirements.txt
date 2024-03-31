@@ -22,3 +22,5 @@ rfc3986==1.5.0
 SQLAlchemy==2.0.28
 typing_extensions==4.10.0
 Werkzeug==3.0.1
+flask_cors==4.0.0
+pymysql==1.1.0
