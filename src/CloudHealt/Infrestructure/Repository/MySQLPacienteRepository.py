@@ -22,7 +22,8 @@ class MySQLPacienteRepository(PacientesPort):
             return {"message": str(e), "status": "error"}, 500
 
     def get_paciente(self, paciente_uuid):
-        pass
+        paciente = self.db.query(Model).filter(Model.uuid == paciente_uuid).first()
+        return {'paciente': paciente.to_json(), 'status': 'Success'} if paciente else {'message': 'Paciente not found', 'status': "false"}
 
     def registerPaciente(self, paciente: Pacientes):
         try:

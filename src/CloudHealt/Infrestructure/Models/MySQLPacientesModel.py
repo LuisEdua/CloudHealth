@@ -38,8 +38,4 @@ class MySQLPacientesModels(Base):
             "piso quirofano": self.quirofano.floor.level if self.quirofano_uuid is not None else None,
             "historia": self.historia.to_json(),
             "status": self.status
-<<<<<<< HEAD
         }
-=======
-        }
->>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/CamaUseCase/Create.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/CamaUseCase/ListAll.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/CamaUseCase/ListFree.py" afterDir="false" />
@@ -48,17 +49,29 @@
       <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLPacienteRepository.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Tests/Pacientes/UpdatePacientes.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/PacienteUseCase/FindById.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/PacientesControllers/FindByIDController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLPacienteRepository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Pacientes/FindById.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       <change beforePath="$PROJECT_DIR$/.idea/CloudHealt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CloudHealt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Domain/Entity/Pacientes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Domain/Entity/Pacientes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Domain/Ports/PacientesPort.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Domain/Ports/PacientesPort.py" afterDir="false" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
 >>>>>>> List_pacientes
@@ -66,6 +79,10 @@
       <change beforePath="$PROJECT_DIR$/src/Database/MySQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/MySQL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+      <change beforePath="$PROJECT_DIR$/src/Database/MySQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/MySQL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +112,14 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="List_pacientes" />
 =======
         <entry key="$PROJECT_DIR$" value="main" />
 >>>>>>> List_pacientes
+=======
+        <entry key="$PROJECT_DIR$" value="Crear_pacientes" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,6 +139,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Flask server.CloudHealt.executor": "Run",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,19 +173,32 @@
     "git-widget-placeholder": "Update__paciente",
     "last_opened_file_path": "/home/luis/Downloads/API-DBH",
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+    "Python tests.Python tests in FindById.py.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Paciente__por__ID",
+    "last_opened_file_path": "C:/Users/Keyel/Documents/CloudHealth/venv/Scripts/python.exe",
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
+=======
+    "settings.editor.selected.configurable": "terminal",
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keyel\Documents\CloudHealth" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager" selected="Python tests.Python tests in CreatePaciente.py">
@@ -196,6 +231,9 @@
 =======
   <component name="RunManager" selected="Python tests.Python tests for UpdatePacientes.TestUpdatePacientes.test_update_data">
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+  <component name="RunManager" selected="Python tests.Python tests in FindById.py">
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
     <configuration name="CloudHealt" type="Python.FlaskServer">
       <module name="CloudHealt" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -212,6 +250,7 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <configuration name="Flask (src/app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
@@ -234,6 +273,9 @@
 =======
     <configuration name="Python tests for UpdatePacientes.TestUpdatePacientes.test_access_to_info" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+    <configuration name="Python tests in FindById.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       <module name="CloudHealt" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +287,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <option name="_new_target" value="&quot;$PROJECT_DIR$/src/Tests/Pacientes/CreatePaciente.py&quot;" />
 =======
@@ -314,11 +357,15 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/src/Tests/Pacientes/UpdatePacientes.py&quot;" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/Tests/Pacientes/FindById.py&quot;" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <item itemvalue="Python tests.Python tests in CreatePaciente.py" />
         <item itemvalue="Flask server.Flask (src/app.py)" />
@@ -334,6 +381,9 @@
         <item itemvalue="Python tests.Python tests for UpdatePacientes.TestUpdatePacientes.test_access_to_info" />
         <item itemvalue="Python tests.Python tests in UpdatePacientes.py" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+        <item itemvalue="Python tests.Python tests in FindById.py" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
       </list>
     </recent_temporary>
   </component>
@@ -358,6 +408,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1712321831522" duration="951000" />
       <workItem from="1712338213581" duration="72000" />
       <workItem from="1712611023964" duration="4101000" />
@@ -374,6 +425,9 @@
 =======
       <workItem from="1711086898562" duration="5371000" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+      <workItem from="1711017951555" duration="5295000" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
     </task>
     <servers />
   </component>
@@ -395,6 +449,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/CloudHealt$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1712614767971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
 =======
     <SUITE FILE_PATH="coverage/CloudHealth$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1711022620020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -410,5 +465,9 @@
     <SUITE FILE_PATH="coverage/CloudHealth$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1711027470458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/CloudHealth$.coverage" NAME=" Coverage Results" MODIFIED="1711092280213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Tests/Pacientes" />
 >>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
+=======
+    <SUITE FILE_PATH="coverage/CloudHealth$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1711022620020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CloudHealth$.coverage" NAME=" Coverage Results" MODIFIED="1711023212621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Tests/Pacientes" />
+>>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
   </component>
 </project>
