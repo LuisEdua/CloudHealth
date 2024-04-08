@@ -138,6 +138,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Flask server.CloudHealt.executor": "Run",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,15 +181,24 @@
     "git-widget-placeholder": "Paciente__por__ID",
     "last_opened_file_path": "C:/Users/Keyel/Documents/CloudHealth/venv/Scripts/python.exe",
 >>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
+=======
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Crear__usuarios",
+    "last_opened_file_path": "/home/luis/Downloads/API-DBH",
+>>>>>>> Crear_usuarios
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "settings.editor.selected.configurable": "terminal",
 >>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
+=======
+>>>>>>> Crear_usuarios
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -450,6 +460,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/CloudHealt$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1712614767971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
 =======
     <SUITE FILE_PATH="coverage/CloudHealth$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1711022620020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -469,5 +480,10 @@
     <SUITE FILE_PATH="coverage/CloudHealth$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1711022620020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CloudHealth$.coverage" NAME=" Coverage Results" MODIFIED="1711023212621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Tests/Pacientes" />
 >>>>>>> e49c87d3cb79c107538badefe383bee594843a6a
+=======
+    <SUITE FILE_PATH="coverage/CloudHealt$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1712615666325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/CloudHealt$CloudHealt.coverage" NAME="CloudHealt Coverage Results" MODIFIED="1712614767971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CloudHealt$app.coverage" NAME="app Coverage Results" MODIFIED="1712615436216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+>>>>>>> Crear_usuarios
   </component>
 </project>
