@@ -1,0 +1,78 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e87a2e75-2e6b-4027-9312-3a2ec0c929e2\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/src/CloudHealt/Application/UseCase/PacienteUseCase/List.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/PacientesControllers/List.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLPacienteRepository.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Tests/Pacientes/ListPacientes.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/app.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/app.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Flask Main\" />\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\n    <envs>\n      <env key=\"FLASK_APP\" value=\"app\" />\n    </envs>\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\n    <option name=\"myEnvs\">\n      <map>\n        <entry key=\"FLASK_APP\" value=\"app\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 8\n}</component>\n  <component name=\"ProjectId\" id=\"2dtNxgzCE0ReeJ6fY9b8grfICDs\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Flask server.CloudHealt.executor\": \"Run\",\n    \"Python.ListPacientes.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"List__pacientes\",\n    \"last_opened_file_path\": \"/home/luis/Downloads/API-DBH\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.ListPacientes\">\n    <configuration name=\"ListPacientes\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"CloudHealt\" />\n      <option name=\"ENV_FILES\" value=\"\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/src/Tests/Pacientes\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/src/Tests/Pacientes/ListPacientes.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"CloudHealt\" type=\"Python.FlaskServer\">\n      <module name=\"CloudHealt\" />\n      <option name=\"target\" value=\"$PROJECT_DIR$/src/app.py\" />\n      <option name=\"targetType\" value=\"PATH\" />\n      <option name=\"ENV_FILES\" value=\"\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.ListPacientes\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-67fca87a943a-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.259\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e87a2e75-2e6b-4027-9312-3a2ec0c929e2\" name=\"Changes\" comment=\"\" />\n      <created>1710823662261</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1710823662261</updated>\n      <workItem from=\"1710823668201\" duration=\"9427000\" />\n      <workItem from=\"1710856935198\" duration=\"76000\" />\n      <workItem from=\"1710961095557\" duration=\"6630000\" />\n      <workItem from=\"1710983243066\" duration=\"3085000\" />\n      <workItem from=\"1711041194251\" duration=\"13000\" />\n      <workItem from=\"1711042657839\" duration=\"34000\" />\n      <workItem from=\"1711074579697\" duration=\"2267000\" />\n      <workItem from=\"1711092744239\" duration=\"2471000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/CloudHealt$CloudHealt.coverage\" NAME=\"CloudHealt Coverage Results\" MODIFIED=\"1711094384661\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/CloudHealt$ListPacientes.coverage\" NAME=\"ListPacientes Coverage Results\" MODIFIED=\"1711094889769\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/src/Tests/Pacientes\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,19 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e87a2e75-2e6b-4027-9312-3a2ec0c929e2" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/PacienteUseCase/List.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/PacientesControllers/List.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLPacienteRepository.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Tests/Pacientes/ListPacientes.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLHistoriasClinicasModel.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLPacientesModel.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLQuirofanosModel.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+-    </list>
++    <list default="true" id="e87a2e75-2e6b-4027-9312-3a2ec0c929e2" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -58,22 +46,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Flask server.CloudHealt.executor": "Run",
+-    "Python.ListPacientes.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "List__pacientes",
+-    "last_opened_file_path": "/home/luis/Downloads/API-DBH",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Flask server.CloudHealt.executor&quot;: &quot;Run&quot;,
++    &quot;Python.ListPacientes.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;List__pacientes&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/luis/Downloads/API-DBH&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src" />
+@@ -147,7 +135,7 @@
+       <workItem from="1711041194251" duration="13000" />
+       <workItem from="1711042657839" duration="34000" />
+       <workItem from="1711074579697" duration="2267000" />
+-      <workItem from="1711092744239" duration="2471000" />
++      <workItem from="1711092744239" duration="2777000" />
+     </task>
+     <servers />
+   </component>
