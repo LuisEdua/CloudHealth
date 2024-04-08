@@ -5,12 +5,21 @@ from src.CloudHealt.Infrestructure.Models.MySQLPacientesModel import MySQLPacien
 
 
 class MySQLPacienteRepository(PacientesPort):
+
     def __init__(self):
         Base.metadata.create_all(bind=engine)
         self.db = session_local()
 
     def get_pacientes(self, area_uuid):
-        pass
+        try:
+            pacientes = self.db.query(Model).filter(Model.cama.habitacion.area.uuid == area_uuid).all()
+            if pacientes:
+                return {"message": "pacientes found", "pacientes": [p.to_json() for p in pacientes],
+                        "status": "Success"}, 200
+            else:
+                return {"message": "pacientes not found", "status": "not found"}, 404
+        except Exception as e:
+            return {"message": str(e), "status": "error"}, 500
 
     def get_paciente(self, paciente_uuid):
         pass

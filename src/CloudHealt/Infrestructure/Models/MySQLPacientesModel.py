@@ -14,6 +14,7 @@ class MySQLPacientesModels(Base):
     age = Column(Integer, nullable=False)
     gender = Column(String(20), nullable=False)
     birthday = Column(Date, nullable=False)
+    status = Column(String(50), nullable=False)
     quirofano_uuid = Column(String(36), ForeignKey('quirofanos.uuid'), nullable=True)
     quirofano = relationship(MySQLQuirofanosModel, backref=backref('pacientes', uselist=False))
     cama_uuid = Column(String(36), ForeignKey('camas.uuid'), nullable=True, unique=True)
@@ -35,5 +36,6 @@ class MySQLPacientesModels(Base):
             "quirofano": self.quirofano.number if self.quirofano_uuid is not None else None,
             "piso pabellon": self.cama.habitacion.area.floor.level if self.cama_uuid is not None else None,
             "piso quirofano": self.quirofano.floor.level if self.quirofano_uuid is not None else None,
-            "historia": self.historia.to_json()
+            "historia": self.historia.to_json(),
+            "status": self.status
         }
