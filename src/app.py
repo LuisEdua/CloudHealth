@@ -1,10 +1,14 @@
 from flask import Flask
 from src.CloudHealt.Infrestructure.Routes.CamasRoutes import camas_routes
+from src.CloudHealt.Infrestructure.Routes.HistoriasRoutes import historias_routes
+from src.CloudHealt.Infrestructure.Routes.PacientesRoutes import pacientes_routes
 from flask_cors import CORS
 
 app = Flask(__name__)
 
 app.register_blueprint(camas_routes, url_prefix='/camas')
+app.register_blueprint(historias_routes, url_prefix="/historias")
+app.register_blueprint(pacientes_routes, url_prefix="/pacientes")
 CORS(app)
 
 if __name__ == '__main__':

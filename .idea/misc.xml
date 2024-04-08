@@ -3,5 +3,9 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (CloudHealt)" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CloudHealth)" project-jdk-type="Python SDK" />
+>>>>>>> deace49fb367628e9440d817f97d7d079bbaa38f
 </project>
