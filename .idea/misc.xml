@@ -4,8 +4,12 @@
     <option name="sdkName" value="Python 3.12 (CloudHealt)" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
 =======
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CloudHealth)" project-jdk-type="Python SDK" />
 >>>>>>> deace49fb367628e9440d817f97d7d079bbaa38f
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CloudHealth)" project-jdk-type="Python SDK" />
+>>>>>>> 169235d2c1452049f23093de21d86b76af3cd9ed
 </project>

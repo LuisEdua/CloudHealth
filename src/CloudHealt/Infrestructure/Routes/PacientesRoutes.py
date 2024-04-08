@@ -2,10 +2,12 @@ from flask import request, jsonify, Blueprint
 from src.CloudHealt.Infrestructure.Repository.MySQLPacienteRepository import MySQLPacienteRepository
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.List import ListController
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.Create import CreateController
+from src.CloudHealt.Infrestructure.Controllers.PacientesController.Update import UpdateController
 
 repo = MySQLPacienteRepository()
 listController = ListController(repo)
 createController = CreateController(repo)
+updateController = UpdateController(repo)
 
 pacientes_routes = Blueprint('pacientes_routes', __name__)
 
@@ -24,3 +26,7 @@ def create_paciente():
         return jsonify(result), 500
     else:
         return jsonify({'message': 'Resultado desconocido'}), 500
+    
+@pacientes_routes.route('/<string:paciente_uuid>', methods=['PUT'])
+def update(paciente_uuid):
+    return updateController.run(paciente_uuid, request)

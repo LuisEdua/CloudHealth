@@ -36,5 +36,18 @@ class MySQLPacienteRepository(PacientesPort):
         except Exception as e:
             return {"status": "Failed", "message": str(e)}
 
-    def updatePaciente(self, status, cama):
-        pass
+    def updatePaciente(self, paciente_uuid, status, cama, quirofano):
+        try:
+            paciente = self.db.query(Model).filter(Model.uuid == paciente_uuid).first()
+            if paciente:
+                paciente.status = status if status is not None else paciente.status
+                paciente.cama_uuid = cama if cama is not None else paciente.cama_uuid
+                paciente.quirofano_uuid = quirofano if quirofano is not None else paciente.quirofano_uuid
+                self.db.commit()
+                return {"message": "Paciente actualizado correctamente", "paciente": paciente.to_json(),
+                        "status": "success"}, 200
+            else:
+                return {"message": "Paciente not found", "status": "not found"}, 404
+        except Exception as e:
+            return {"message": f'{e}', "status": "error"}, 500
+

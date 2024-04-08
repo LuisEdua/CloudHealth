@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-DATABASE_URL = 'mysql+pymysql://root:RcBaR_-315@127.0.0.1:3306/BDH'
+DATABASE_URL = 'mysql+pymysql://root:@127.0.0.1:3306/BDH'
 
 engine = create_engine(DATABASE_URL)
 Base.metadata.create_all(bind=engine)
