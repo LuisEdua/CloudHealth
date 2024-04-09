@@ -1,4 +1,4 @@
-from src.CloudHealt.Application.UseCase.HistoriasClinicasUseCase.Create import Create as UseCase
+from HistoriasClinicasUseCase.Create import Create as UseCase
 from src.CloudHealt.Domain.Ports.HistoriaClinicaPort import HistoriaClinicaPort as Port
 
 

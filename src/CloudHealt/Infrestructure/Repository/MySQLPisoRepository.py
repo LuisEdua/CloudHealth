@@ -14,7 +14,7 @@ class MySQLPisoRepository(PisosPort):
         try:
             pisos = self.db.query(Model).all()
             if pisos:
-                return {"message": "PisosControllers found", "pisos":[p.to_json() for p in pisos], "status": "Success"}, 200
+                return {"message": "Pisos found", "pisos":[p.to_json() for p in pisos], "status": "Success"}, 200
             else:
                 return {"message": "Not found", "status": "not found"}, 404
         except Exception as e:
