@@ -11,3 +11,12 @@ class MySQLQuirofanosModel(Base):
     description = Column(String(255), nullable=False)
     floor_uuid = Column(String(36), ForeignKey('floors.uuid'), nullable=False)
     floor = relationship(MySQLPisosModel, backref=backref('quirofanos', uselist=True, cascade="all, delete"))
+
+
+    def to_json(self):
+        return {
+            "uuid": self.uuid,
+            "number": self.number,
+            "description": self.description,
+            "floor": self.floor.to_json()
+        }
