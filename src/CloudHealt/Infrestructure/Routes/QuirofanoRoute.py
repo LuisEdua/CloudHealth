@@ -1,9 +1,7 @@
 # Importaciones de librería (descargadas)
 from flask import request, Blueprint
 from src.Database.MySQL import session_local
-
-# Importaciones de aplicaciones (implementadas)
-from src.CloudHealt.Infrestructure.Models.MySQLQuirofanosModel import MySQLQuirofanos
+from src.CloudHealt.Infrestructure.Models.MySQLQuirofanosModel import MySQLQuirofanosModel as MySQLQuirofanos
 
 DataRoutes = Blueprint("quirofano_routes", __name__)
 

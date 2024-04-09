@@ -12,7 +12,7 @@ class MySQLPacienteRepository(PacientesPort):
 
     def get_pacientes(self, area_uuid):
         try:
-            pacientes = self.db.query(Model).filter(Model.cama.habitacion.area.uuid == area_uuid).all()
+            pacientes = self.db.query(Model).filter(Model.cama.habitacion.area_uuid == area_uuid).all()
             if pacientes:
                 return {"message": "pacientes found", "pacientes": [p.to_json() for p in pacientes],
                         "status": "Success"}, 200
@@ -30,7 +30,7 @@ class MySQLPacienteRepository(PacientesPort):
             new = Model(uuid=paciente.uuid, firstname=paciente.firstname, lastname=paciente.lastname,
                         age=paciente.age, gender=paciente.gender, birthday=paciente.birthday,
                         quirofano_uuid=paciente.quirofano_uuid, cama_uuid=paciente.cama,
-                        historia_uuid=paciente.historia_uuid)
+                        historia_uuid=paciente.historia_uuid, status=paciente.status)
             self.db.add(new)
             self.db.commit()
             return {"status": "Created", "message": "Paciente created", "paciente": new.to_json()}
