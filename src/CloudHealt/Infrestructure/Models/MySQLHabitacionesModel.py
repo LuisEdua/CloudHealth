@@ -1,6 +1,5 @@
 from sqlalchemy import Column, String, Integer, ForeignKey
 from sqlalchemy.orm import relationship, backref
-
 from src.CloudHealt.Infrestructure.Models.MySQLAreasModel import MySQLAreasModel
 from src.Database.MySQL import Base
 
