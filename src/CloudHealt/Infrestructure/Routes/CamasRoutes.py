@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
-from src.CloudHealt.Infrestructure.Controllers.CamasController.Create import CreateController
-from src.CloudHealt.Infrestructure.Controllers.CamasController.ListFree import ListFreeController
-from src.CloudHealt.Infrestructure.Controllers.CamasController.ListAll import ListAllController
+from src.CloudHealt.Infrestructure.Controllers.CamasControllers.Create import CreateController
+from src.CloudHealt.Infrestructure.Controllers.CamasControllers.ListFree import ListFreeController
+from src.CloudHealt.Infrestructure.Controllers.CamasControllers.ListAll import ListAllController
 from src.CloudHealt.Infrestructure.Repository.MySQLCamaRepository import MySQLCamasRepository
 
 repo = MySQLCamasRepository()

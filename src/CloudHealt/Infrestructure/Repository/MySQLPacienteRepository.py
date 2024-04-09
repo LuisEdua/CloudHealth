@@ -1,5 +1,8 @@
 from src.CloudHealt.Domain.Entity.Pacientes import Pacientes
 from src.CloudHealt.Domain.Ports.PacientesPort import PacientesPort
+from src.CloudHealt.Infrestructure.Models.MySQLAreasModel import MySQLAreasModel
+from src.CloudHealt.Infrestructure.Models.MySQLCamasModel import MySQLCamasModel
+from src.CloudHealt.Infrestructure.Models.MySQLHabitacionesModel import MySQLHabitacionesModel
 from src.Database.MySQL import Base, engine, session_local
 from src.CloudHealt.Infrestructure.Models.MySQLPacientesModel import MySQLPacientesModels as Model
 
@@ -12,7 +15,11 @@ class MySQLPacienteRepository(PacientesPort):
 
     def get_pacientes(self, area_uuid):
         try:
-            pacientes = self.db.query(Model).filter(Model.cama.habitacion.area_uuid == area_uuid).all()
+            pacientes = (self.db.query(Model)
+                         .join(MySQLCamasModel)
+                         .join(MySQLHabitacionesModel)
+                         .join(MySQLAreasModel)
+                         .filter(MySQLAreasModel.uuid == area_uuid).all())
             if pacientes:
                 return {"message": "pacientes found", "pacientes": [p.to_json() for p in pacientes],
                         "status": "Success"}, 200

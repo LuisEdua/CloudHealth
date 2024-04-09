@@ -6,3 +6,9 @@ class MySQLPisosModel(Base):
     __tablename__ = 'floors'
     uuid = Column(String(36), primary_key=True)
     level = Column(String(36), nullable=False)
+
+    def to_json(self):
+        return {
+            'uuid': self.uuid,
+            "level": self.level
+        }

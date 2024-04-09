@@ -2,7 +2,7 @@ from flask import request, jsonify, Blueprint
 from src.CloudHealt.Infrestructure.Repository.MySQLPacienteRepository import MySQLPacienteRepository
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.List import ListController
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.Create import CreateController
-from src.CloudHealt.Infrestructure.Controllers.PacientesController.Update import UpdateController
+from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.Update import UpdateController
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.FindByIDController import FindByIdController
 
 repo = MySQLPacienteRepository()

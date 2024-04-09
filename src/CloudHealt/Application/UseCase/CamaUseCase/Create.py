@@ -11,7 +11,7 @@ class Create:
             camas = []
             cantidad = data['cantidad']
             habitacion = data['habitacion']
-            for i in range(cantidad):
+            for i in range(1, cantidad + 1):
                 cama= Camas(i, habitacion)
                 camas.append(cama)
             return self.repository.create_camas(camas)

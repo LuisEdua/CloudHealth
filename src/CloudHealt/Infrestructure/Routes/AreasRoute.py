@@ -1,97 +1,38 @@
-# Importaciones de librería (descargadas)
 from flask import request, Blueprint
-from src.Database.MySQL import session_local
-from sqlalchemy.exc import IntegrityError
-from sqlalchemy.orm.exc import NoResultFound
+from src.CloudHealt.Infrestructure.Repository.MySQLAreaRepository import MySQLAreaRepository
+from src.CloudHealt.Infrestructure.Controllers.AreasControllers.Create import CreateController
+from src.CloudHealt.Infrestructure.Controllers.AreasControllers.ListAll import ListAllController
+from src.CloudHealt.Infrestructure.Controllers.AreasControllers.ListByFloor import ListByFloorController
+from src.CloudHealt.Infrestructure.Controllers.AreasControllers.FindById import FindByIdController
 
-# Importaciones de aplicaciones (implementadas)
-from src.CloudHealt.Infrestructure.Models.MySQLAreasModel import MySQLAreasModel
-
+repo = MySQLAreaRepository()
+create_controller = CreateController(repo)
+list_all_controller = ListAllController(repo)
+list_by_floor_controller = ListByFloorController(repo)
+find_by_id_controller = FindByIdController(repo)
 
 DataRoutes = Blueprint("areas_routes", __name__)
 
-#Crear Area
-@DataRoutes.route('/crear', methods=['POST'])
-def areaCrear():        
-    data = request.json
-    
-    print(data)
 
-    # Verificar si el número de habitación ya existe
-    existing_area = session_local.query(MySQLAreasModel).filter_by(name=data.get('name')).first()
-    if existing_area:
-        return {"status": 400, "message": "Ya existe una area con ese número"}, 400
-    
-    new_habitacion = MySQLAreasModel(
-        name = data.get('name'),
-        floor_uuid = data.get('floor_uuid')
-    )
-    
-    session_local.add(new_habitacion)
-    session_local.commit()
-    
-    return {"status": 200, "message": "Area creada"}, 200
+# Crear Area
+@DataRoutes.route('/', methods=['POST'])
+def area_crear():
+    return create_controller.run(request)
 
-#Listar areas
-@DataRoutes.route('/listar', methods=['GET'])
-def areasListar():        
-    
-    areas = session_local.query(MySQLAreasModel).all()
-    
-    print("Listar Areas")
-    print(areas)
-    
-    arrayAreas = []
-    arrayAreas = [{
-        "uuid": area.uuid,
-        "name": area.name,
-        "floor_uuid": area.floor_uuid        
-    } for area in areas]
-       
-    return {"status":200,"areas":arrayAreas}, 200
 
-#Obtener Habitacion por Id
-@DataRoutes.route('/<uuid>', methods=['GET'])
-def areasPorUUID(uuid):
-    area = session_local.query(MySQLAreasModel).filter_by(uuid=uuid).first()
-    
-    if area:        
-        obj_area = {
-            "uuid": area.uuid,
-            "name": area.name,
-            "floor_uuid": area.floor_uuid
-        }
-        session_local.commit()
-        return {"status": 200,"message": "Area encontrada", "habitacion":obj_area }, 200
-    else:
-        return {"status": 404, "message": "Area no encontrada","habitacion":{}}, 404
+# Listar areas
+@DataRoutes.route('/', methods=['GET'])
+def areas_listar():
+    return list_all_controller.run()
 
-# Actualizar Area por UUID
-@DataRoutes.route('/actualizar/<string:uuid>', methods=['PUT'])
-def areaActualizar(uuid):
-    data : object = request.json
-    
-    # Verificar si la area existe
-    existing_area = session_local.query(MySQLAreasModel).filter_by(uuid=uuid).first()
-    if not existing_area:
-        return {"status": 404, "message": "La Area no existe"}, 404
-    
-    # Actualizar la area
-    existing_area.name = data.get('name', existing_area.name)
-    existing_area.floor_uuid = data.get('floor_uuid', existing_area.floor_uuid)
-    
-    session_local.commit()
-    
-    return {"status": 200, "message": "Area actualizada correctamente"}, 200
 
-#Eliminar Area
-@DataRoutes.route('/eliminar/<uuid>', methods=['DELETE'])
-def areaEliminar(uuid):
-    area = session_local.query(MySQLAreasModel).filter_by(uuid=uuid).first()
-    
-    if area:
-        session_local.delete(area)
-        session_local.commit()
-        return {"status": 200, "message": "Area eliminada"}, 200
-    else:
-        return {"status": 404, "message": "Area no encontrada"}, 404
+# Obtener Habitacion por Id
+@DataRoutes.route('/<string:uuid>', methods=['GET'])
+def area_by_uuid(uuid):
+    return find_by_id_controller.run(uuid)
+
+
+# Obtener areas por pisos
+@DataRoutes.route('/piso/<string:uuid>', methods=['GET'])
+def find_by_floor(uuid):
+    return list_by_floor_controller.run(uuid)

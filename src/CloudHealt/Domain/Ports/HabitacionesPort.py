@@ -16,9 +16,5 @@ class HabitacionesPort(ABC):
         pass
 
     @abstractmethod
-    def update_habitaciones(self, habitacion_uuid, area_uuid):
-        pass
-
-    @abstractmethod
     def create_habitaciones(self, habitaciones: list[Habitaciones]):
         pass
