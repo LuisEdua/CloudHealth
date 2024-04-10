@@ -10,3 +10,10 @@ class MySQLDeportesModel(Base):
     name = Column(String(255), nullable=False)
     historia_uuid = Column(String(36), ForeignKey('historiasclinicas.uuid'))
     historia = relationship(MySQLHistoriasClinicas, backref=backref('deportes', uselist=True, cascade="all, delete"))
+
+
+    def to_json(self):
+        return {
+            'uuid': self.uuid,
+            'name': self.name,
+        }

@@ -11,3 +11,10 @@ class MySQLTratamientosModel(Base):
     description = Column(String(255), nullable=False)
     paciente_uuid = Column(String(36), ForeignKey('pacientes.uuid'), nullable=False)
     paciente = relationship(MySQLPacientesModels, backref=backref('pacientes', uselist=True, cascade="all, delete"))
+
+    def to_json(self):
+        return {
+            'uuid': self.uuid,
+            'title': self.title,
+            'description': self.description
+        }

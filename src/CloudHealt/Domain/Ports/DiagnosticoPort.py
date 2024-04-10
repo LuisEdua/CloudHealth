@@ -14,3 +14,11 @@ class DiagnosticoPort(ABC):
     @abstractmethod
     def create_diagnostico(self, diagnostico: Diagnosticos):
         pass
+
+    @abstractmethod
+    def update_diagnostico(self, uuid, title: str, description: str):
+        pass
+
+    @abstractmethod
+    def delete_diagnostico(self, uuid: str):
+        pass

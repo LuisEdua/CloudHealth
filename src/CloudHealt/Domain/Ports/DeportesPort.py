@@ -12,5 +12,5 @@ class DeportesPort(ABC):
         pass
 
     @abstractmethod
-    def create_deportes(self, deporte: Deportes):
+    def create_deportes(self, deportes: list[Deportes]):
         pass

@@ -18,8 +18,6 @@ class TestCreatePaciente(TestCase):
             "weight": 75.9,
             "high": 1.83
         })
-        historia_uuid = response.json().get('uuid')
-        return historia_uuid
 
     def test_create_paciente_success(self):
 

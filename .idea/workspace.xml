@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87a2e75-2e6b-4027-9312-3a2ec0c929e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/RolesUseCase/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/RolesUseCase/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/GetAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/GetByArea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/RolesControllers/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/RolesControllers/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/Delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/GetAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/GetByArea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/Login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Controllers/UsersControllers/Update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLRolRepository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLUsuariosRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CloudHealt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CloudHealt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Domain/Ports/UsersPort.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Domain/Ports/UsersPort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLRolesModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLRolesModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLUsersModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLUsersModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/RolesRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/RolesRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/UsuariosRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/UsuariosRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/MySQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/MySQL.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +61,7 @@
     "Python tests.Python tests in UpdatePacientes.py.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "gestion__usuarios",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/home/luis/Downloads/API-DBH",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

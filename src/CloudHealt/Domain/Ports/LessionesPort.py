@@ -12,5 +12,5 @@ class LessionesPort(ABC):
         pass
 
     @abstractmethod
-    def create_lesiones(self, lesiones: Lesiones):
+    def create_lesiones(self, lesiones: list[Lesiones]):
         pass
