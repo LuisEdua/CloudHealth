@@ -7,8 +7,11 @@ class Create:
         self.repository = repository
 
     def run(self, data):
-        profesion = data['profesion']
-        weight = data['weight']
-        high = data['high']
-        historia = HistoriasClinicas(profesion, weight, high)
-        return self.repository.create_historia(historia)
+        try:
+            profesion = data['profesion']
+            weight = data['weight']
+            high = data['high']
+            historia = HistoriasClinicas(profesion, weight, high)
+            return self.repository.create_historia(historia)
+        except Exception as e:
+            return {"Message": f'Error: {e}', 'status': "error"}, 500
