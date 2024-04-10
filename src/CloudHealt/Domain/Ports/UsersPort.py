@@ -17,7 +17,7 @@ class UsersPort(ABC):
 
 
     @abstractmethod
-    def login(self, username: str, password: str):
+    def login(self, email: str, password: str):
         pass
 
     @abstractmethod
@@ -25,5 +25,9 @@ class UsersPort(ABC):
         pass
 
     @abstractmethod
-    def update_user(self, email=None, password=None, area_uuid=None):
+    def update_user(self, uuid:str, email=None, password=None, area_uuid=None):
+        pass
+
+    @abstractmethod
+    def delete_user(self, uuid:str):
         pass

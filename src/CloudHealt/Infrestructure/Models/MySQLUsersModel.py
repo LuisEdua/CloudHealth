@@ -12,9 +12,22 @@ class MySQLUsersModel(Base):
     lastname = Column(String(100), nullable=False)
     age = Column(Integer, nullable=False)
     birthday = Column(DateTime, nullable=False)
-    email = Column(String(100), nullable=False)
+    email = Column(String(100), nullable=False, unique=True)
     password = Column(String(255), nullable=False)
     rol_uuid = Column(String(36), ForeignKey('roles.uuid'), nullable=False)
     rol = relationship(MySQLRolesModel, backref=backref('users', uselist=True, cascade="all, delete"))
     area_uuid = Column(String(36), ForeignKey('areas.uuid'), nullable=False)
     area = relationship(MySQLAreasModel, backref=backref('users', uselist=True, cascade="all, delete"))
+
+
+    def to_json(self):
+        return {
+            'uuid': self.uuid,
+            'firstname': self.firstname,
+            'lastname': self.lastname,
+            'age': self.age,
+            "birthday": self.birthday,
+            "email": self.email,
+            "rol": self.rol.to_json(),
+            "area": self.area.to_json()
+        }
