@@ -1,7 +1,7 @@
 import unittest
 from flask import Flask
 from flask_testing import TestCase
-from src.CloudHealt.Infrestructure.Routes import PacientesRoutes, HistoriasRoutes
+from src.CloudHealt.Infrestructure.Routes import PacientesRoutes
 
 
 class TestCreatePaciente(TestCase):
@@ -9,17 +9,7 @@ class TestCreatePaciente(TestCase):
         app = Flask(__name__)
         app.config['TESTING'] = True
         app.register_blueprint(PacientesRoutes.pacientes_routes, url_prefix="/pacientes")
-        app.register_blueprint(HistoriasRoutes.historias_routes, url_prefix="/historias")
         return app
-
-    def create_historia_clinica(self):
-        response = self.client.post('/historias', json={
-            "profesion": "Ingeniero",
-            "weight": 75.9,
-            "high": 1.83
-        })
-        historia_uuid = response.json().get('uuid')
-        return historia_uuid
 
     def test_create_paciente_success(self):
 

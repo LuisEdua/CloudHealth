@@ -14,3 +14,7 @@ class TratamientosPort(ABC):
     @abstractmethod
     def create_tratamiento(self, tratamiento: Tratamientos):
         pass
+
+    @abstractmethod
+    def delete_tratamiento(self, uuid):
+        pass
