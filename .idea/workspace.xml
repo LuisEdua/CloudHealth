@@ -5,70 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87a2e75-2e6b-4027-9312-3a2ec0c929e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/MiddleWares/ProtectRoutes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Areas/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Areas/FindById.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Areas/ListAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Areas/ListByFloor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Camas/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Camas/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Deportes/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Deportes/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Diagnosticos/Delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Diagnosticos/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Diagnosticos/Post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Diagnosticos/Put.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Floors/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Floors/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Habitaciones/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Habitaciones/ListAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Habitaciones/ListByArea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/HistoriasClinicas/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/HistoriasClinicas/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Lesiones/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Lesiones/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Quirofanos/Crear.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Quirofanos/ListAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Quirofanos/ListByFloor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Roles/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Roles/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Tratamientos/Delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Tratamientos/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Tratamientos/Post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/Delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/Get.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/GetByArea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/Login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/Post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Users/Update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CloudHealt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CloudHealt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/PacienteUseCase/Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/PacienteUseCase/Create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Application/UseCase/UsersUseCase/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Domain/Entity/Pacientes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Domain/Entity/Pacientes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLCamasModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLUsersModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Models/MySQLUsersModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLUsuariosRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Repository/MySQLUsuariosRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/AreasRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/AreasRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/CamasRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/CamasRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/DeportesRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/DeportesRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/DiagnosticoRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/DiagnosticoRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/FloorRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/FloorRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/HabitacionesRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/HabitacionesRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/HistoriasRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/HistoriasRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/LesionesRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/LesionesRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/PacientesRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/QuirofanoRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/QuirofanoRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/RolesRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/RolesRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/TratamientosRoutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/TratamientosRoutes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/UsuariosRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CloudHealt/Infrestructure/Routes/UsuariosRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/MySQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/MySQL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Pacientes/CreatePaciente.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Pacientes/CreatePaciente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Pacientes/FindById.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Pacientes/FindById.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Pacientes/ListPacientes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Pacientes/ListPacientes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Pacientes/UpdatePacientes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Pacientes/UpdatePacientes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +74,7 @@
     "Python.ListAll.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/luis/Downloads/API-DBH",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -152,7 +89,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in Get.py (1)">
+  <component name="RunManager" selected="Flask server.CloudHealt">
     <configuration name="CloudHealt" type="Python.FlaskServer">
       <module name="CloudHealt" />
       <option name="target" value="$PROJECT_DIR$/src/app.py" />
@@ -267,11 +204,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in Get.py (1)" />
-        <item itemvalue="Python tests.Python tests in Create.py (1)" />
         <item itemvalue="Python tests.Python tests for Get.CamasTestCase.test_get_free_camas_whith_invalid_uuid" />
         <item itemvalue="Python tests.Python tests in Get.py" />
-        <item itemvalue="Python tests.Python tests in Create.py (1)" />
       </list>
     </recent_temporary>
   </component>
