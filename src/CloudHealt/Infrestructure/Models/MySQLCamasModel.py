@@ -16,7 +16,7 @@ class MySQLCamasModel(Base):
     def to_json(self):
         return {
             "uuid": self.uuid,
-            "name": self.number,
+            "number": self.number,
             "habitacion": self.habitacion.number
         }
 

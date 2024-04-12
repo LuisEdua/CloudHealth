@@ -1,4 +1,6 @@
 from flask import request, Blueprint
+
+from src.CloudHealt.Infrestructure.MiddleWares.ProtectRoutes import token_required
 from src.CloudHealt.Infrestructure.Repository.MySQLLesionesRepository import MySQLLesionesRepository
 from src.CloudHealt.Infrestructure.Controllers.LesionesControllers.Create import CreateController
 from src.CloudHealt.Infrestructure.Controllers.LesionesControllers.Get import GetController
@@ -15,5 +17,6 @@ def Get(historia_uuid):
 
 
 @lesiones_routes.route('/', methods=['POST'])
+@token_required
 def Create():
     return create_controller.run(request)

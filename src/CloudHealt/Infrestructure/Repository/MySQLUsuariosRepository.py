@@ -3,6 +3,7 @@ from src.CloudHealt.Domain.Entity.Users import Users
 from src.CloudHealt.Infrestructure.Models.MySQLUsersModel import MySQLUsersModel as Model
 from src.Database.MySQL import session_local, Base, engine
 from src.CloudHealt.Infrestructure.MiddleWares.UsersMiddleWares import encrypt_password, verify_password
+from src.CloudHealt.Infrestructure.MiddleWares.functionJWT import write_token
 from flask import jsonify
 
 
@@ -39,7 +40,9 @@ class MySQLUsuariosRepository(UsersPort):
             user = self.db.query(Model).filter(Model.email == email).first()
             if user:
                 if verify_password(password, user.password):
-                    return {"Message": "User logged in", "user": user.to_json(), "status": "success"}, 200
+                    token = write_token(data={"user_id": str(user.uuid)})
+                    return {"Message": "User logged in", "token": f"{token}", "user": user.to_json(),
+                            "status": "success"}, 200
                 else:
                     return {"Message": "Invalid Password", "status": "unauthorized"}, 401
             else:

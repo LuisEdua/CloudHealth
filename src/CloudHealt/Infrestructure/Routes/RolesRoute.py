@@ -1,4 +1,6 @@
 from flask import request, Blueprint
+
+from src.CloudHealt.Infrestructure.MiddleWares.ProtectRoutes import token_required
 from src.CloudHealt.Infrestructure.Repository.MySQLRolRepository import MySQLRolRepository
 from src.CloudHealt.Infrestructure.Controllers.RolesControllers.Get import GetController
 from src.CloudHealt.Infrestructure.Controllers.RolesControllers.Create import CreateController
@@ -10,6 +12,7 @@ get_controller = GetController(repo)
 DataRoutes = Blueprint("roles_routes", __name__)
 
 @DataRoutes.route("/", methods=["GET"])
+@token_required
 def get_routes():
     return get_controller.run()
 

@@ -1,4 +1,6 @@
 from flask import request, jsonify, Blueprint
+
+from src.CloudHealt.Infrestructure.MiddleWares.ProtectRoutes import token_required
 from src.CloudHealt.Infrestructure.Repository.MySQLPacienteRepository import MySQLPacienteRepository
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.List import ListController
 from src.CloudHealt.Infrestructure.Controllers.PacientesControllers.Create import CreateController
@@ -14,6 +16,7 @@ findByIdController = FindByIdController(repo)
 pacientes_routes = Blueprint('pacientes_routes', __name__)
 
 @pacientes_routes.route('/area/<string:area_uuid>', methods=['GET'])
+@token_required
 def list_pacientes(area_uuid):
     return listController.run(area_uuid)
 
@@ -28,6 +31,7 @@ def findById(uuid):
     return jsonify(response), status_code
 
 @pacientes_routes.route('/', methods=['POST'])
+@token_required
 def create_paciente():
     result = createController.run(request)
     if result['status'] == 'Created':
@@ -40,5 +44,6 @@ def create_paciente():
         return jsonify({'message': 'Resultado desconocido'}), 500
     
 @pacientes_routes.route('/<string:paciente_uuid>', methods=['PUT'])
+@token_required
 def update(paciente_uuid):
     return updateController.run(paciente_uuid, request)

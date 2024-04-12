@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, ForeignKey, DateTime
+from sqlalchemy import Column, String, Integer, ForeignKey, Date
 from sqlalchemy.orm import relationship, backref
 from src.CloudHealt.Infrestructure.Models.MySQLAreasModel import MySQLAreasModel
 from src.CloudHealt.Infrestructure.Models.MySQLRolesModel import MySQLRolesModel
@@ -11,12 +11,12 @@ class MySQLUsersModel(Base):
     firstname = Column(String(100), nullable=False)
     lastname = Column(String(100), nullable=False)
     age = Column(Integer, nullable=False)
-    birthday = Column(DateTime, nullable=False)
+    birthday = Column(Date, nullable=False)
     email = Column(String(100), nullable=False, unique=True)
     password = Column(String(255), nullable=False)
     rol_uuid = Column(String(36), ForeignKey('roles.uuid'), nullable=False)
     rol = relationship(MySQLRolesModel, backref=backref('users', uselist=True, cascade="all, delete"))
-    area_uuid = Column(String(36), ForeignKey('areas.uuid'), nullable=False)
+    area_uuid = Column(String(36), ForeignKey('areas.uuid'), nullable=True)
     area = relationship(MySQLAreasModel, backref=backref('users', uselist=True, cascade="all, delete"))
 
 
@@ -29,5 +29,5 @@ class MySQLUsersModel(Base):
             "birthday": self.birthday,
             "email": self.email,
             "rol": self.rol.to_json(),
-            "area": self.area.to_json()
+            "area": self.area.to_json() if self.area is not None else None
         }

@@ -1,4 +1,6 @@
 from flask import request, Blueprint
+
+from src.CloudHealt.Infrestructure.MiddleWares.ProtectRoutes import token_required
 from src.CloudHealt.Infrestructure.Repository.MySQLAreaRepository import MySQLAreaRepository
 from src.CloudHealt.Infrestructure.Controllers.AreasControllers.Create import CreateController
 from src.CloudHealt.Infrestructure.Controllers.AreasControllers.ListAll import ListAllController
@@ -16,23 +18,27 @@ DataRoutes = Blueprint("areas_routes", __name__)
 
 # Crear Area
 @DataRoutes.route('/', methods=['POST'])
+@token_required
 def area_crear():
     return create_controller.run(request)
 
 
 # Listar areas
 @DataRoutes.route('/', methods=['GET'])
+@token_required
 def areas_listar():
     return list_all_controller.run()
 
 
 # Obtener Habitacion por Id
 @DataRoutes.route('/<string:uuid>', methods=['GET'])
+@token_required
 def area_by_uuid(uuid):
     return find_by_id_controller.run(uuid)
 
 
 # Obtener areas por pisos
 @DataRoutes.route('/piso/<string:uuid>', methods=['GET'])
+@token_required
 def find_by_floor(uuid):
     return list_by_floor_controller.run(uuid)

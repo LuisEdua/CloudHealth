@@ -16,7 +16,7 @@ class Create:
             area_uuid = data['area_uuid']
             birthday = data['birthday']
             age = int(data['age'])
-            user = Users(firstname, lastname, email, password, rol_uuid, area_uuid, birthday, age)
+            user = Users(firstname, lastname, email, password, rol_uuid, area_uuid, age, birthday)
             return self.repository.create(user)
         except Exception as e:
             return {"Message": f"Something went wrong \n{e}", "Status": "Error"}, 500

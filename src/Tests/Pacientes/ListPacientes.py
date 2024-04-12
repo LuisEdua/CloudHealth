@@ -11,25 +11,22 @@ class TestUpdatePacientes(TestCase):
         return app
 
     def test_pacientes_list(self):
-        response = self.client.get('/pacientes/area/2910aa72-e5cd-11ee-b867-f0761cdd1aa9')
+        response = self.client.get('/pacientes/area/9aff8923-0453-4211-809e-b11d72ed1c02')
         self.assertEqual(response.status_code, 200)
 
         data = response.get_json()
         self.assertEqual(data['status'], "Success")
 
+    def test_stress(self):
+        for i in range(100):
+            self.test_pacientes_list()
+
     def test_area_not_found(self):
-        response = self.client.get('/pacientes/area/2910aa72-e5cd-11ee-b867-f0761cdd1a88')
+        response = self.client.get('/pacientes/area/291')
         self.assertEqual(response.status_code, 404)
 
         data = response.get_json()
         self.assertEqual(data['status'], "not found")
-
-    def test_area_not_found(self):
-        response = self.client.get('/pacientes/area/291')
-        self.assertEqual(response.status_code, 500)
-
-        data = response.get_json()
-        self.assertEqual(data['status'], "error")
 
 
 
