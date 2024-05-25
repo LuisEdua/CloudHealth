@@ -20,19 +20,16 @@ delete_controller = DeleteController(repo)
 DataRoutes = Blueprint("users_routes", __name__)
 
 @DataRoutes.route('/', methods=['GET'])
-@token_required
 def get_all():
     return get_all_controller.run()
 
 
 @DataRoutes.route('/<string:area_uuid>', methods=['GET'])
-@token_required
 def get_by_area(area_uuid):
     return get_by_area_controller.run(area_uuid)
 
 
 @DataRoutes.route('/', methods=["POST"])
-@token_required
 def create():
     return create_controller.run(request)
 
@@ -43,11 +40,9 @@ def login():
 
 
 @DataRoutes.route('/<string:uuid>', methods=["PUT"])
-@token_required
 def update(uuid):
     return update_controller.run(uuid, request)
 
 @DataRoutes.route('/<string:uuid>', methods=["DELETE"])
-@token_required
 def delete(uuid):
     return delete_controller.run(uuid)
